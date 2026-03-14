@@ -5,6 +5,7 @@ import LoginPage from './pages/LoginPage.jsx';
 import RegisterPage from './pages/RegisterPage.jsx';
 import DashboardPage from './pages/DashboardPage.jsx';
 import PublicProfilePage from './pages/PublicProfilePage.jsx';
+import DeveloperPage from './pages/DeveloperPage.jsx';
 
 function Navbar({ user, setUser }) {
   const navigate = useNavigate();
@@ -31,6 +32,9 @@ function Navbar({ user, setUser }) {
             <button className="btn btn-outline" onClick={() => navigate('/dashboard')}>
               Dashboard
             </button>
+            <button className="btn btn-outline" onClick={() => navigate('/developer')}>
+              Developer
+            </button>
             <button className="btn btn-primary" onClick={handleLogout}>
               Logout
             </button>
@@ -39,6 +43,9 @@ function Navbar({ user, setUser }) {
           <>
             <button className="btn btn-outline" onClick={() => navigate('/login')}>
               Log in
+            </button>
+            <button className="btn btn-outline" onClick={() => navigate('/developer')}>
+              Developer
             </button>
             <button className="btn btn-primary" onClick={() => navigate('/register')}>
               Join Lowkey
@@ -169,9 +176,10 @@ export default function App() {
         <Route path="/register" element={<RegisterPage setUser={setUser} />} />
         <Route path="/dashboard" element={<DashboardPage user={user} />} />
         <Route path="/u/:profileSlug" element={<PublicProfilePage />} />
+        <Route path="/developer" element={<DeveloperPage />} />
       </Routes>
       <footer className="footer">
-        <span>Lowkey MSG · MERN stack demo</span>
+        <span>Developed by Marvellous Adepoju · Lowkey MSG · MERN stack demo</span>
       </footer>
     </div>
   );

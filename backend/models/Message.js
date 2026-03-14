@@ -21,6 +21,12 @@ const messageSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
+// Automatically remove messages 24 hours after creation
+messageSchema.index({ createdAt: 1 }, { expireAfterSeconds: 60 * 60 * 24 });
+
+// Automatically remove messages 24 hours after creation
+messageSchema.index({ createdAt: 1 }, { expireAfterSeconds: 60 * 60 * 24 });
+
 const Message = mongoose.model('Message', messageSchema);
 
 export default Message;
