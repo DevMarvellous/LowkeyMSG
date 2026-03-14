@@ -6,7 +6,14 @@ export default function DeveloperPage() {
       <section className="card" style={{ maxWidth: 720, marginInline: 'auto' }}>
         <div className="dev-header">
           <div className="dev-avatar">
-            <span>MA</span>
+            <img
+              src="/marvellous.jpg"
+              alt="Portrait of Marvellous Adepoju"
+              onError={(e) => {
+                e.currentTarget.style.display = 'none';
+                e.currentTarget.parentElement.textContent = 'MA';
+              }}
+            />
           </div>
           <div>
             <h1 className="hero-title">About the developer</h1>
@@ -27,7 +34,7 @@ export default function DeveloperPage() {
           <div className="dev-links">
             <a
               className="dev-link-item"
-              href="https://www.linkedin.com"
+              href="https://www.linkedin.com/in/marvellous-adepoju-a33a893a2"
               target="_blank"
               rel="noreferrer"
             >
@@ -41,7 +48,7 @@ export default function DeveloperPage() {
 
             <a
               className="dev-link-item"
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/marvel_develops"
               target="_blank"
               rel="noreferrer"
             >
@@ -55,7 +62,7 @@ export default function DeveloperPage() {
 
             <a
               className="dev-link-item"
-              href="https://www.tiktok.com"
+              href="https://www.tiktok.com/@adepojumarvellou1"
               target="_blank"
               rel="noreferrer"
             >
@@ -69,7 +76,7 @@ export default function DeveloperPage() {
 
             <a
               className="dev-link-item"
-              href="https://www.twitter.com"
+              href="https://x.com/marvel_14_code"
               target="_blank"
               rel="noreferrer"
             >
@@ -79,6 +86,20 @@ export default function DeveloperPage() {
                 </svg>
               </span>
               <span>X (Twitter)</span>
+            </a>
+
+            <a
+              className="dev-link-item"
+              href="https://github.com/DevMarvellous"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span className="dev-icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.51 2.87 8.33 6.84 9.68.5.1.68-.22.68-.48 0-.24-.01-1.02-.01-1.85-2.48.55-3-1.09-3-1.09-.46-1.2-1.12-1.52-1.12-1.52-.92-.64.07-.63.07-.63 1.02.07 1.56 1.07 1.56 1.07.9 1.57 2.36 1.12 2.94.86.09-.67.35-1.12.63-1.38-1.98-.23-4.07-1.03-4.07-4.6 0-1.02.35-1.85.93-2.5-.09-.23-.4-1.18.09-2.45 0 0 .75-.25 2.46.95A8.23 8.23 0 0 1 12 7.5c.76 0 1.53.11 2.25.32 1.71-1.2 2.46-.95 2.46-.95.49 1.27.18 2.22.09 2.45.58.65.93 1.48.93 2.5 0 3.58-2.09 4.37-4.08 4.6.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .26.18.58.69.48A10.04 10.04 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z" />
+                </svg>
+              </span>
+              <span>GitHub</span>
             </a>
           </div>
         </div>

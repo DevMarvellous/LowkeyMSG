@@ -335,6 +335,13 @@ a {
   box-shadow: 0 0 0 2px rgba(234, 179, 8, 0.8), 0 10px 25px rgba(15, 23, 42, 0.9);
 }
 
+.dev-avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  object-fit: cover;
+}
+
 .dev-links {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
