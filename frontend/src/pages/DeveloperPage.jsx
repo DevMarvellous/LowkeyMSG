@@ -7,7 +7,7 @@ export default function DeveloperPage() {
         <div className="dev-header">
           <div className="dev-avatar">
             <img
-              src="/marvellous.jpg"
+              src="/1767461339832.png"
               alt="Portrait of Marvellous Adepoju"
               onError={(e) => {
                 e.currentTarget.style.display = 'none';
